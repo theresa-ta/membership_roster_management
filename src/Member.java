@@ -1,12 +1,12 @@
 public class Member {
-    private int memberID;
+    private String memberID;
     private String firstName;
     private String lastName;
     private String email;
     private int age;
     private int[] monthlyVisits = new int[3];
 
-    public Member(int memberID, String firstName, String lastName, String email, int age, int[] monthlyVisits){
+    public Member(String memberID, String firstName, String lastName, String email, int age, int[] monthlyVisits){
         this.memberID = memberID;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -15,7 +15,7 @@ public class Member {
         this.monthlyVisits = monthlyVisits;
     }
 
-    public void setMemberID(int memberID){
+    public void setMemberID(String memberID){
         this.memberID = memberID;
     }
     public void setFirstName(String firstName){
@@ -34,7 +34,7 @@ public class Member {
         this.monthlyVisits = monthlyVisits;
     }
 
-    public int getMemberID(){
+    public String getMemberID(){
         return memberID;
     }
     public String getFirstName(){
