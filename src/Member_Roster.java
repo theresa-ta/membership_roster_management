@@ -9,4 +9,15 @@ public class Member_Roster {
         Member member = new Member(memberID, firstName, lastName, email, age, monthlyVisits);
         memberList.add(member);
     }
+    public void remove(String memberID){
+        for (int i = 0;  i < memberList.size(); i++){
+            if (memberList.get(i).getMemberID().equals(memberID)) {
+                memberList.remove(i);
+                return;
+            }
+        }
+
+        System.out.println("Member with ID " + memberID + " not found.");
+
+    }
 }
