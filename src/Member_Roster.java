@@ -11,7 +11,7 @@ public class Member_Roster {
     }
     public void remove(String memberID){
         for (int i = 0;  i < memberList.size(); i++){
-            if (memberList.get(i).getMemberID().equals(memberID)) {
+            if (memberList.get(i).getMemberID().equals(memberID)) {//get(i) != getter. get(i) is for arrayList to get index. getter is a method we created. not the same.
                 memberList.remove(i);
                 return;
             }
