@@ -18,6 +18,10 @@ public class Member_Roster {
         }
 
         System.out.println("Member with ID " + memberID + " not found.");
-
+    }
+    public void print_all(){
+        for (int i = 0; i < memberList.size(); i++){
+            memberList.get(i).print();
+        }
     }
 }

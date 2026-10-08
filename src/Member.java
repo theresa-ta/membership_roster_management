@@ -54,12 +54,12 @@ public class Member {
     }
 
     public void print(){
-        System.out.println("Member ID: " + getMemberID());
-        System.out.println("First name: " + getFirstName());
-        System.out.println("Last name: " + getLastName());
-        System.out.println("Email: " + getEmail());
-        System.out.println("Age: " + getAge());
-        System.out.println("Monthly Visits: " + getMonthlyVisits()[0] + ", " + getMonthlyVisits()[1] + ", " + getMonthlyVisits()[2]);
+        System.out.println(getMemberID() + "\t" +
+                "First name: " + getFirstName() + "\t" +
+                "Last name: " + getLastName() + "\t" +
+                "Email: " + getEmail() + "\t" +
+                "Age: " + getAge() + "\t" +
+                "Monthly Visits: " + getMonthlyVisits()[0] + ", " + getMonthlyVisits()[1] + ", " + getMonthlyVisits()[2]);
     }
 
     //completed: 6 private fields, constructor with 6 parameters, this. to each field, 6 getters, 6 setters, print() method, monthly  visit array
