@@ -37,4 +37,14 @@ public class Member_Roster {
         }
         System.out.println("Member with ID " + memberID + " not found.");
     }
+
+    public void print_invalid_emails() {
+        for (int i = 0; i < memberList.size(); i++) {
+            String email = memberList.get(i).getEmail();
+
+            if (!email.contains("a") || !email.contains(".") || email.contains(" ")) {
+                System.out.println(email);
+            }
+        }
+    }
 }
