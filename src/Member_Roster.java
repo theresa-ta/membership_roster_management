@@ -24,4 +24,17 @@ public class Member_Roster {
             memberList.get(i).print();
         }
     }
+    public void print_average_monthly_visits(String memberID){
+        for (int i = 0; i < memberList.size(); i++) {
+            if (memberList.get(i).getMemberID().equals(memberID)) {
+                int[] visits = memberList.get(i). getMonthlyVisits();
+                double average = (visits[0] + visits[1] + visits[2]) / 3.0;
+
+                System.out.println("Member ID " + memberID + "Average Monthly Visits: " + average);
+
+                return;
+            }
+        }
+        System.out.println("Member with ID " + memberID + " not found.");
+    }
 }
